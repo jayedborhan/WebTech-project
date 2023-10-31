@@ -41,9 +41,6 @@
             <tr>
                 <td align="center"><fieldset>
                     <legend>Help & Support</legend>
-                    <a href="publichome.php">Contact Us</a>  <br>
-                    <a href="publichome.php">Complain</a> <br>
-                    <a href="publichome.php">FAQ</a> <br>
             </fieldset></td>
             </tr>
 

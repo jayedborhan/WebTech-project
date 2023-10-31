@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_COOKIE['flag'])){
+if(isset($_SESSION['flag'])){
 ?>
 
 
@@ -21,7 +21,7 @@ if(isset($_COOKIE['flag'])){
                             <img height="120" src="logo.png">
                         </td>
                         <td align="right">
-                        Logged in as <a href="viewprofile.php"> <?php echo $_SESSION['name'] ?></a> |
+                        Logged in as  <?php echo $_SESSION['name'] ?></a> |
                                     <a href="logout.php">Logout</a>
                     </td>    
                 </tr>    
@@ -44,56 +44,9 @@ if(isset($_COOKIE['flag'])){
                 <td width="300" >
                    
                 <ul>
-                    <!-- <li> <a href="admindashboard.php">Admin Dashboard</a></li>
-                
-                        <li> <a href="viewprofile.php">  Profile</a></li>
-                        <li> <a href="setting.php">Settings</a></li>
-                        
-                        <li> <a href="logout.php"> Logout</a></li> -->
 
-                     <?php
-                        if (trim($_SESSION['role'])=="admin")
-                    {
-                        ?>
-                        <li> <a href="admindashboard.php">Admin Dashboard</a></li>
-                        <li> <a href="viewprofile.php">  Profile</a></li>
-                       
-                        
-                        <li> <a href="logout.php"> Logout</a></li> 
-                    <?php
-                    }
-                    else if (trim($_SESSION['role'])=="admin")
-                    {
-                        ?>
-
-                        <li> <a href="viewprofile.php">  Profile</a></li>
-                        <li> <a href="setting.php">Settings</a></li>
                         
                         <li> <a href="logout.php"> Logout</a></li>
-
-                        <?php
-                    }
-                    else if (trim($_SESSION['role'])=="customer")
-                    {
-                        ?>
-                         <li> <a href="search.php">Search</a></li>
-                        <li> <a href="viewprofile.php">  Profile</a></li>
-                        <li> <a href="setting.php">Settings</a></li>
-                        
-                        <li> <a href="logout.php"> Logout</a></li>
-                        <?php
-                    }
-                    else if (trim($_SESSION['role'])=="employee")
-                    {
-                        ?>
-                        <li> <a href="viewprofile.php">  Profile</a></li>
-                        <li> <a href="setting.php">Settings</a></li>
-                        
-                        <li> <a href="logout.php"> Logout</a></li>
-                        <?php
-                    }
-
-                    ?>
                     </ul>
 
                 </td>

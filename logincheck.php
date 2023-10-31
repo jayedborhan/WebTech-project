@@ -40,23 +40,7 @@
                     }
     
                   
-                    if (trim($_SESSION['role'])=="admin")
-                    {
-                        header('location: admindashboard.php');
-                    }
-                    else if (trim($_SESSION['role'])=="")
-                    {
-                        
-                        header('location: admindashboard.php');
-                    }
-                    else if (trim($_SESSION['role'])=="customer")
-                    {
-                        header('location: customerdashboard.php');
-                    }
-                    else if (trim($_SESSION['role'])=="employee")
-                    {
-                        header('location: employeedashboard.php');
-                    }
+ 
                    
 
                 }

@@ -2,6 +2,6 @@
 
     session_start();
     session_destroy();
-    setcookie('flag', 'asif', time()-10, '/');
+    setcookie('flag', 'borhan', time()-10, '/');
     header('location: login.php');
 ?>
