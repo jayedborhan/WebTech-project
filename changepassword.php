@@ -46,7 +46,9 @@ if(isset($_COOKIE['flag'])){
                 <ul>
                     <!-- <li> <a href="admindashboard.php">Admin Dashboard</a></li>
                 
-                 
+                        <li> <a href="viewprofile.php">  Profile</a></li>
+                        <li> <a href="setting.php">Settings</a></li>
+                        
                         <li> <a href="logout.php"> Logout</a></li> -->
 
                      <?php
@@ -55,7 +57,7 @@ if(isset($_COOKIE['flag'])){
                         ?>
                         <li> <a href="admindashboard.php">Admin Dashboard</a></li>
                         <li> <a href="viewprofile.php">  Profile</a></li>
-                        <li> <a href="setting.php">Settings</a></li>
+                       
                         
                         <li> <a href="logout.php"> Logout</a></li> 
                     <?php
